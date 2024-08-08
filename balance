@@ -1,0 +1,618 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "height": 600,
+  "width": 600,
+  "hideSelection": false,
+  "fillHorizontally": true,
+  "formatter": {
+    "elmType": "div",
+    "attributes": {
+      "class": "sp-card-container"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "sp-card-defaultClickButton"
+        },
+        "customRowAction": {
+          "action": "defaultClick"
+        }
+      },
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "ms-bgColor-neutralPrimaryAlt sp-css-borderColor-neutralLight sp-card-borderHighlight sp-card-subContainer"
+        },
+        "style": {
+          "padding": "10px",
+          "borderRadius": "10px",
+          "border": "2px solid #0078d4",
+          "boxShadow": "0 2px 4px rgba(0,0,0,0.1)"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-header ms-bgColor-neutralPrimaryAlt"
+            },
+            "style": {
+              "paddingBottom": "8px",
+              "borderBottom": "2px solid #0078d4",
+              "marginBottom": "10px"
+            },
+            "children": [
+              {
+                "elmType": "p",
+                "attributes": {
+                  "class": "ms-fontColor-white ms-fontWeight-semibold",
+                  "style": "font-size: 18px;"
+                },
+                "txtContent": "=[$Title]"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-body"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-blue"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "Mes: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "=[$Mes]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-blue"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "Ventas Netas: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "=[$ActivoPedidos]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "GF Sueldos: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$ActivoBBVAmx]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "GF IMSS: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$ActivoBBVAUSD]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "GF Administrativos: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$ActivoCajaChica]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "GF Extraordinarios: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$ActivoClientesUSD]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "GF Bossc: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$PasivoProveedoresUSD]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "GF Créditos: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$ActivoClientesMX]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-blue"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "TotalGF: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "=[$TotalActivo]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "Comisiones: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$ActivoDeudores]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "Bono: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$PasivoProveedoresMX]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "Impuestos: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$PasivoProductosXComprar]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-red"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "GastosTotales: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "=[$TotalPasivo]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-green"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "UtilidadOPerdida: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px; font-weight: bold;"
+                    },
+                    "txtContent": "=[$UtilidadOPerdida]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "Partida Inversion: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$Partida_x0020_Inversion]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "Partida Socios: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$Partida_x0020_Socios]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "Kike: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$Kike]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "Zara: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$Zara]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-row ms-bgColor-neutralPrimaryAlt"
+                },
+                "style": {
+                  "marginBottom": "8px",
+                  "padding": "5px",
+                  "borderRadius": "5px"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white ms-fontWeight-semibold",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "Alberto: "
+                  },
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "class": "ms-fontColor-white",
+                      "style": "font-size: 14px;"
+                    },
+                    "txtContent": "=[$Alberto]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
